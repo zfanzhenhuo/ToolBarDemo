@@ -1,0 +1,1 @@
+include ':app', 'PagerSlidingTabStrip', 'PagerSlidingTabStrip-1.0.1'
