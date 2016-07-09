@@ -5,10 +5,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 
-
-
 public class MyViewPagerAdapter extends FragmentPagerAdapter {
-    public final int PAGE_CONUT = 8;
+    public final int PAGE_COUNT = 8;
     private String[] titles;
 
     public MyViewPagerAdapter(FragmentManager fm, String[] titles) {
@@ -22,19 +20,19 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return MyFragment.newInstance(position);
             case 1:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 2:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 3:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 4:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 5:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 6:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
             case 7:
-                return MyFragment.newInstance(position);
+                return Fragment_2.newInstance(position);
 
         }
         return null;
@@ -42,7 +40,7 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return PAGE_CONUT;
+        return PAGE_COUNT;
     }
 
     public CharSequence getPageTitle(int position) {

@@ -1,6 +1,5 @@
 package com.frank.toolbardemo;
 
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,7 +16,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -32,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle drawerToggle;
     private ListView listView;
     private String[] lvs = {"DEFAULT", "RED", "BLUE", "MATERIAL GREY"};
-    private ArrayAdapter arrayAdapter;
     private ImageView yoona;
-    private String[] titles = new String[]{"美女图集", "搞笑段子", "自拍达人", "煮酒论史", "莲蓬鬼话", "读史明智", "体育娱乐", "轻松一刻"};
+    private String[] titles = new String[]{"风景图集", "搞笑段子", "自拍达人", "煮酒论史", "莲蓬鬼话", "读史明智", "体育娱乐", "轻松一刻"};
     SlidingTabLayout slidingTabLayout;
     ViewPager viewPager;
     private List<ItemBean> mList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,17 +44,10 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.tl_custom);
         drawerLayout = (DrawerLayout) findViewById(R.id.dl_left);
         listView = (ListView) findViewById(R.id.lv_left_menu);
-        yoona = (ImageView) findViewById(R.id.yoona);
-        //toolbar.setNavigationIcon(R.mipmap.ic_launcher);
-        // toolbar.setLogo(R.mipmap.ic_launcher);
+        //yoona = (ImageView) findViewById(R.id.yoona);
         toolbar.setTitle("Yoona");
-        toolbar.setSubtitle("林允儿");
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                return false;
-            }
-        });
+       // toolbar.setSubtitle("林允儿");
+
            /*
            设置toolbar文字颜色
             */
